@@ -1,13 +1,13 @@
 *{
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
-    overflow-x: hidden;
+    box-sizing: content-box;
 }
 
 nav{
     width: 100vw;
     /* overflow-x: none; */
+    box-sizing: content-box;
 }
 
 #navlist{
@@ -17,6 +17,10 @@ nav{
     justify-content: space-between;
     margin-left: 5px;
     margin-right: 5px;
+}
+
+body{
+    overflow-x: hidden;
 }
 
 .container{
@@ -127,6 +131,7 @@ a{
     gap: 3px;
     flex-direction: column;
     padding: 15px;
+    box-sizing: content-box;
 }
 
 .rightcontent{
